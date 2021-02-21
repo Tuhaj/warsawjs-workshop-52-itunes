@@ -1,12 +1,12 @@
 import './App.css';
-import { Counter } from './counter';
+import { Itunes } from './itunes';
 import React from "react";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Counter/>
+        <Itunes />
       </header>
     </div>
   );
