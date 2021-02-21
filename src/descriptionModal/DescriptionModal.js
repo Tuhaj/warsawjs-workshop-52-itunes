@@ -5,7 +5,8 @@ import {
   ModalContent, ModalFooter,
   ModalHeader,
   ModalOverlay,
-  useDisclosure
+  useDisclosure,
+  Link
 } from "@chakra-ui/react";
 
 export function DescriptionModal({ result }) {
@@ -24,10 +25,10 @@ export function DescriptionModal({ result }) {
             dangerouslySetInnerHTML={{ __html: result.description }}
           />
           <ModalFooter>
-            <Button colorScheme="blue" mr={3} onClick={onClose}>
+            <Button colorScheme="green" mr={3} onClick={onClose}>
               Close
             </Button>
-            <Button variant="ghost">Secondary Action</Button>
+            <Link href={result.trackViewUrl} isExternal='true'><Button type="button" colorScheme="blue">Buy Now</Button></Link>
           </ModalFooter>
         </ModalContent>
       </Modal>
